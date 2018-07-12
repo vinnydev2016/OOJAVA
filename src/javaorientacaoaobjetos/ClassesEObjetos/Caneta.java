@@ -2,16 +2,16 @@ package javaorientacaoaobjetos.ClassesEObjetos;
 
 public class Caneta {
    //Atributos
-   String modelo;
-   String cor;
-   double ponta;
-   int carga;
-   boolean tampada;
+   public String modelo;
+   public String cor;
+   private double ponta;
+   protected int carga;
+   private boolean tampada;
    
    //Métodos
    
    //VOID = sem retorno
-   void Status(){
+   public void Status(){
        System.out.println("Modelo: " + this.modelo);
        System.out.println("Uma Caneta " + this.cor);
        System.out.println("Ponta: " + this.ponta);
@@ -19,7 +19,7 @@ public class Caneta {
        System.out.println("Está tampada? " + this.tampada); 
    }
    
-   void Rabiscar(){
+   public void Rabiscar(){
        if(this.tampada == true){
            System.out.println("ERRO! Não posso escrever, a CANETA está tampada.");
        } else{
@@ -27,11 +27,11 @@ public class Caneta {
        }
    }
    
-   void Tampar(){
+   public void Tampar(){
        this.tampada = true;
    }
    
-   void Destampar(){
+   public void Destampar(){
        this.tampada = false;
    }        
 }
