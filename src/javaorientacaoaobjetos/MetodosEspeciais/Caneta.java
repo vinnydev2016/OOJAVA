@@ -1,6 +1,6 @@
 package javaorientacaoaobjetos.MetodosEspeciais;
 
-public class Caneta {
+public final class Caneta {
     private String modelo;
     private double ponta;
     private String cor;
