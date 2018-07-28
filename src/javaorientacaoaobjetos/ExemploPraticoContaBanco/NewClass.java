@@ -21,9 +21,22 @@ public class NewClass {
         
         p2.pagarMensalidade();
         
+        p2.sacar(800);
+        
         p1.estadoAtual();
         p2.estadoAtual();
         
         
+        ContaBanco p3 = new ContaBanco();
+        p3.setNumeroDaConta(3333);
+        p3.setDono("KAIO");
+        p3.abrirConta("CP");
+        
+        p3.depositar(200);
+        p3.pagarMensalidade();
+        
+        p3.sacar(280);
+        p3.sacar(80);
+        p3.estadoAtual();
     }
 }

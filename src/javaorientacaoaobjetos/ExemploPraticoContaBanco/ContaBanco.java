@@ -26,7 +26,7 @@ public final class ContaBanco {
         } else if(t == "CP"){
             this.saldo = 150;
         }
-        System.out.println("Conta criada com sucesso");
+        System.out.println("Conta criada com sucesso, " + this.getDono());
     }
     
     public void fecharConta(){
@@ -46,7 +46,7 @@ public final class ContaBanco {
         if (this.getStatus()){ 
             // modificar o saldo para o saldo atual + o valor depositado
             this.setSaldo(this.getSaldo() + v);
-            System.out.println("Depósito realizado na conta de " + this.getDono());
+            System.out.println("Depósito \realizado na conta de " + this.getDono());
         } else{
             System.out.println("Impossível fazer depósito. Conta FECHADA!");
         }
@@ -90,8 +90,8 @@ public final class ContaBanco {
         this.saldo = 0;
         this.status = false;
     }
-    // GETTERS E SETTERS
     
+    // GETTERS E SETTERS
     public void setNumeroDaConta(int n){
         this.numeroDaCOnta = n;
     }
