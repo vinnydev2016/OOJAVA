@@ -6,11 +6,33 @@ public class NewClass {
     public static void main(String[] args) {
         Lutador l [] = new Lutador[6]; // array
         
-        l[0]= new Lutador("Anderson Silva", "Brasil", 34, 1.75, 78.8, 13, 0, 1);
-        l[1] = new Lutador("Wanderlei Silva", "Brasil", 41, 1.78, 90, 7, 5, 2);
+        l[0] = new Lutador("Pretty Boy", "França", 31, 1.75, 68.9, 11, 2, 1);
         
-        l[0].apresentar();
-        l[0].ganharLuta();
+        l[1] = new Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3);
+        
+        l[2] = new Lutador("Snapshadow", "EUA", 35, 1.65, 80.9, 12, 2, 1);
+        
+        l[3] = new Lutador("Dead Code", "Austrália", 28, 1.93, 81.f, 13, 0, 2);
+        
+        l[4] = new Lutador("UFOCobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3);
+        
+        l[5] = new Lutador("Nerdaart", "EUA", 30, 1.81, 105.7, 12, 2, 41);
+       
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(l[0], l[1]);
+        UEC01.lutar();
         l[0].status();
+        l[1].status();
+        
+        
+        /*
+        mostrar todos os lutadores
+        
+        for(int i = 0; i < l.length; i++){
+            l[i].apresentar();
+            l[i].status();
+        }
+        */
+        
     }
 }
